@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+img{
+	position: relative;
+	margin-top: 100px;
+	margin-left: 50px;
+	width: 300px;
+	height: 500px;
+}
+</style>
+<script>
+function biggerPic(n){
+	n.style.width = "310px";
+	n.style.height = "510px";
+}
+function nomalPic(n){
+	n.style.width = "300px";
+	n.style.height = "500px";
+}
+</script>
+</head>
+
+<body>
+<p>当鼠标放在图片上，图片会变大；</p>
+<p>当鼠标离开图片，图片会恢复原来的大小；</p>
+<img src="timg.jpg" onmousemove="biggerPic(this)" onmouseout="nomalPic(this)" alt="Smiley">
+</body>
+</html>
